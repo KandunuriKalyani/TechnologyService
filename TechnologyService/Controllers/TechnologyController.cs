@@ -18,11 +18,11 @@ namespace TechnologyService.Controllers
             }
         }
 
-       public TechnologyTable Get(int SNO)
+       public TechnologyTable Get(int seqno)
         {
             using (TechnologyDBEntities entities = new TechnologyDBEntities())
             {
-                return entities.TechnologyTables.FirstOrDefault(e=>e.SNO==SNO);
+                return entities.TechnologyTables.FirstOrDefault(e=>e.SNO==seqno);
             }
         }
     }
